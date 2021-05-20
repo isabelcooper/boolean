@@ -1,5 +1,5 @@
-const TRUE_VALUES = ["1", "true", "on"];
-const FALSE_VALUES = ["0", "false", "off", ""];
+const TRUE_VALUES = Object.freeze(["1", "true", "on"]);
+const FALSE_VALUES = Object.freeze(["0", "false", "off", ""]);
 
 export function valueToBool(input: string | number | null | undefined) {
 
